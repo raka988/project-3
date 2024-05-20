@@ -1,6 +1,6 @@
 services:
   app: 
-    container_name:
+    container_name: app
       build:
         context: "./app"
         dockerfile: Dockerfile

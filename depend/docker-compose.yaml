@@ -16,6 +16,7 @@ services:
     container_name: mongo-express-example
     ports:
       - "8099:8081"
+    restart: always
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: raka
       ME_CONFIG_MONGODB_ADMINPASSWORD: raka

@@ -6,6 +6,9 @@ services:
   - "3306:3306"
   environment:
     MARIADB_ROOT_PASSWORD: "admin123"
+    MARIADB_USER: "raka"
+    MARIADB_PASSWORD: "raka123"
+    MARIADB_DATABASE: "raka_db"
 
   adminer-example:
     image: adminer

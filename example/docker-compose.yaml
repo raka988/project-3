@@ -1,0 +1,4 @@
+services:
+  nginx-example: #ini adalah key (bebas, dan bersifat uniq)
+    container_name: nginx-example
+    image: nginx:latest

@@ -9,4 +9,4 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: raka
       MONGO_INITDB_DATABASE: admin
     volumes:
-      "./data-mongo1:/data/db"
+      - "./data-mongo1:/data/db"

@@ -13,5 +13,5 @@ services:
   adminer-example:
     image: adminer
     container_name: adminer-example
-  ports:
-  - "8080:8080"
+    ports:
+    - "8080:8080"

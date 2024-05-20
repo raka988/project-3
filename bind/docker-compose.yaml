@@ -1,0 +1,12 @@
+services:
+  mongodb1:
+    image: mongo:latest
+    container_name: mongodb1
+    ports:
+      - "3307:3306"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: raka
+      MONGO_INITDB_ROOT_USERNAME: raka
+      MONGO_INITDB_DATABASE: admin
+    volumes:
+      "./data-mongo1:/data/db"

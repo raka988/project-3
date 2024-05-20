@@ -5,7 +5,7 @@ services:
   ports:
   - "3306:3306"
   environment:
-    MARIADB_ROOT_PASSWORD="admin123"
+    MARIADB_ROOT_PASSWORD: "admin123"
 
   adminer-example:
     image: adminer

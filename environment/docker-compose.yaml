@@ -9,9 +9,3 @@ services:
       MARIADB_USER: "raka"
       MARIADB_PASSWORD: "raka123"
       MARIADB_DATABASE: "raka_db"
-
-  adminer-example:
-    image: adminer
-    container_name: adminer-example
-    ports:
-      - "8585:80"

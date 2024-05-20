@@ -1,0 +1,14 @@
+services:
+  mariadb-example:
+    image: mariadb:latest
+    container_name: mariadb-example
+  ports:
+  - "3306:3306"
+  environment:
+    MARIADB_ROOT_PASSWORD=admin123
+
+  adminer-example:
+    image: adminer
+    container_name: adminer-example
+    ports:
+      - 8080:8080

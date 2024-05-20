@@ -30,4 +30,4 @@ volumes:
   mongo-data1:
     name: mongo_data1
    mongo-data2:
-    name: mongo_data12
+    name: mongo_data2

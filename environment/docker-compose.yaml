@@ -9,3 +9,15 @@ services:
       MARIADB_USER: "raka"
       MARIADB_PASSWORD: "raka123"
       MARIADB_DATABASE: "raka_db"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin-example
+    ports:
+      - "8020:80"
+    environment:
+      PMA_HOST: mariadb-example
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: "admin123"
+    depends_on:
+      - mariadb-example

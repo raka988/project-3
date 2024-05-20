@@ -14,6 +14,6 @@ services:
     image: adminer
     container_name: adminer-example
     ports:
-      - "8020:80"
+      - "8020:8080"
     depends_on:
       - mariadb-example

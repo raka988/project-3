@@ -15,5 +15,9 @@ services:
     container_name: adminer-example
     ports:
       - "8020:8080"
+    environment:
+      PMA_HOST: mariadb-example
+      PMA_PORT: 3306
+      MYSQL_ROOT_PASSWORD: "admin123"
     depends_on:
       - mariadb-example
